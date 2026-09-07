@@ -9,24 +9,33 @@
 <body>
   <main class="task-manager">
     <h1>Task Manager</h1>
-    <p class="subtitle">Keep track of what you need to do.</p>
-
-    <form id="task-form" class="task-form">
-      <label for="task-input">New task</label>
-      <div class="input-row">
-        <input
-          type="text"
-          id="task-input"
-          placeholder="Enter a task"
-          autocomplete="off"
-        />
-        <button type="submit">Add Task</button>
-      </div>
-    </form>
+    <p class="subtitle">Mark tasks as complete or remove them from your list.</p>
 
     <section class="task-section" aria-labelledby="task-list-heading">
       <h2 id="task-list-heading">Your Tasks</h2>
-      <ul id="task-list" class="task-list"></ul>
+      <ul id="task-list" class="task-list">
+        <li class="task-item">
+          <span>Read a book</span>
+          <div class="task-actions">
+            <button class="complete-button" type="button">Complete</button>
+            <button class="delete-button" type="button">Delete</button>
+          </div>
+        </li>
+        <li class="task-item">
+          <span>Take a walk</span>
+          <div class="task-actions">
+            <button class="complete-button" type="button">Complete</button>
+            <button class="delete-button" type="button">Delete</button>
+          </div>
+        </li>
+        <li class="task-item">
+          <span>Plan tomorrow</span>
+          <div class="task-actions">
+            <button class="complete-button" type="button">Complete</button>
+            <button class="delete-button" type="button">Delete</button>
+          </div>
+        </li>
+      </ul>
     </section>
   </main>
 

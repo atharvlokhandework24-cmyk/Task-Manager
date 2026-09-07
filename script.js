@@ -1,20 +1,13 @@
-const taskForm = document.getElementById("task-form");
-const taskInput = document.getElementById("task-input");
 const taskList = document.getElementById("task-list");
 
-taskForm.addEventListener("submit", (event) => {
-  event.preventDefault();
+taskList.addEventListener("click", (event) => {
+  const taskItem = event.target.closest(".task-item");
 
-  const taskText = taskInput.value.trim();
-
-  if (taskText === "") {
-    return;
+  if (event.target.classList.contains("complete-button")) {
+    taskItem.classList.toggle("completed");
   }
 
-  const taskItem = document.createElement("li");
-  taskItem.textContent = taskText;
-  taskList.appendChild(taskItem);
-
-  taskInput.value = "";
-  taskInput.focus();
+  if (event.target.classList.contains("delete-button")) {
+    taskItem.remove();
+  }
 });
