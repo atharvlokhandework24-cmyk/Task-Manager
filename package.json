@@ -1,0 +1,17 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "Student Task Manager Web Application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atharvlokhandework24-cmyk/Task-Manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
